@@ -6,22 +6,28 @@
     line-height: 1.5em;
   }
 } */
+@media only screen and (max-height: 900px) {
+  #hero{
+    height:100vh;
+  }
+}
 
 @media only screen and (max-width: 1548px) {
   .into-image {
     /* padding-top: 15%; */
   }
-
+  
   .project-content-h1 {
     font-size: 4em;
     line-height: 4.5rem;
   }
 }
 
-@media only screen and (max-width: 1233px) {
+@media only screen and (max-width: 1317px) {
   .hero-row {
     padding-top: 0rem;
   }
+
 
   .project-content-h1 {
     font-size: 3em;
@@ -35,182 +41,68 @@
   .txt-rotate {
     font-size: 1.8rem;
   }
+  .intro-script{
+    font-size: 4rem;
+  }
 }
 
-@media only screen and (max-width: 1065px) {
-  /* #hero {
-    height: 200vh;
-    background: linear-gradient(0deg, #ffffff 50%, #f6efe7 50%);
-  } */
 
-  #hero-txt-content {
-    margin-top: 5%;
-    max-width: 100%;
-    max-height: 362px;
-  }
+@media only screen and (max-width: 1028px) {
+.intro{
+  font-size: 2.5rem;
+}
+.intro-script{
+  font-size: 3rem;
+}
+.txt-rotate{
+  font-size: 1.5rem;
+}
+.intro-child-1{
+  font-size: 1rem;
+}
+.me-social {
+  width: 15%;
+  padding-right: 7%;
+  display: none;
+}
 
-  #hero-img-content {
-    text-align: center;
-  }
+.me-social-text {
+  display: none;
+}
 
+.footer-social {
+  width: 15%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+}
 
-  .intro-container {
-    width: 100%;
-  }
-
-  .navbar {
-    height: 11%;
-  }
-
-  .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0) !important;
-  }
-
-  .navbar-nav {
-    /* background-color: transparent; */
+@media screen and (max-width: 991px) {
+  #hero > div > div {
+    padding: 4rem;
   }
 
   .logo {
     margin-left: 30%;
     margin-top: 10%;
-    width: 25%;
+    width: 35%;
   }
-
-  /* .center-content {
-    top: 50%;
-  } */
-
-  .intro {
-    font-size: 2.1em;
-  }
-
-  .intro-child {
-    font-size: 1.3em;
-  }
-
-  .cartoon {
-    max-height: 75vh;
-    width: 80%;
-  }
-
-  .content-header {
-    font-size: 1.5em;
-  }
-
-  .content-body {
-    font-size: 1em;
-  }
-
-  .content-padding {
-    padding-top: 15%;
-    padding-left: 7%;
-    padding-right: 5%;
-  }
-
-  .subcontent {
-    padding-left: 12%;
-    padding-right: 10%;
-  }
-
-  .designContentHeading {
-    font-size: 2.5em;
-  }
-
-  .designContentBody {
-    font-size: 1em;
-  }
-
-  .designContentRead {
-    font-size: 0.8em;
-  }
-
-  .designContentPadding {
-    padding-top: 30%;
-  }
-
-  .scroll-arrow {
-    padding-right: 2%;
-  }
-
-  .art-column {
-    padding-top: 15%;
-    padding-left: 5%;
-  }
-
-  .arrowup {
-    opacity: 0.8;
-    background: white;
-    width: 55%;
-  }
-
-  .me-social {
-    width: 15%;
-    padding-right: 7%;
-    display: none;
-  }
-
-  .me-social-text {
-    display: none;
-  }
-
-  .footer-social {
-    width: 15%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-  }
-
-  /* Image Model */
-  .modal-content {
-    width: 100%;
-  }
-
-  .project-navigation {
-    font-family: 'Chillax Regular';
-    font-size: 0.7em;
-  }
-
-  /* Hide side nav */
-  .sidenav {
-    display: none;
-  }
-
-  .kktfwp-nav div.kktfwp-next {
-    padding: 0 27% 5% 3%;
-    width: 50%;
-  }
-
-  .kktfwp-nav div.kktfwp-prev {
-    padding: 0 3% 5% 27%;
-    width: 50%;
-  }
-
-  .kktfwp-nav a .n-title {
-    font-size: 0.5em;
-  }
-
-  .insights {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10%;
-    border-bottom: solid 2px #4a4a4a;
-  }
+.navbar-nav{
+  padding-right: 0%;
+  flex-direction: row;
 }
+  .nav-item {
+    font-size: 1rem;
+    padding: 3%;
+  }
 
-@media screen and (max-width: 990px) {
-  #hero > div > div {
-    padding-top: rem;
-  }
-  .logo{
-    margin-left: 6%;
-    margin-top:0;
-  }
   .intro-container {
     padding-right: 10%;
   }
 
-  .into-image {
-    /* padding-top: %; */
-  }
+  /* .into-image {
+    padding-top: 2%;
+  } */
 
   .me-image-2,
   .blog {
@@ -222,11 +114,11 @@
   }
 
   .txt-rotate {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .project-container {
-    padding: 15% 7% 15% 7%;
+    padding: 7% 7% 15% 7%;
   }
 
   .center-content {
@@ -236,10 +128,6 @@
 
   .center-align {
     text-align: left;
-  }
-
-  .thankyou {
-    font-size: 3rem;
   }
 
   .project {
@@ -253,6 +141,14 @@
 
   .more {
     font-size: 2.8rem;
+  }
+
+  .bounce-arrow {
+    visibility: hidden;
+  }
+
+  #hero-img-content {
+    margin-top: 10%;
   }
 }
 
@@ -287,9 +183,9 @@
     text-align: center;
     padding: 1rem;
   }
-
-  .thankyou {
-    font-size: 2.5rem;
+  .nav-item{
+    font-size: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -303,12 +199,13 @@
     text-align: justify;
   }
   .intro-script {
-    font-size: 3em;
+    font-size: 1.8em;
   }
 
   .intro-child {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
+
   .art-column {
     -ms-flex: 100%;
     flex: 100%;
@@ -329,25 +226,41 @@
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 535px) {
   html {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .banner {
     margin-top: 20%;
   }
 
+  .navbar-toggler {
+    font-size: 2rem;
+  }
+
   /* .intro-container {
     width: 100%;
   } */
+  .navbar-list{
+    padding-left: 0%;
+  }
+  .nav-item{
+    font-size: 1.5rem;
+  }
+  .section-title{
+    font-size: 4rem;
+  }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 379px) {
   .txt-rotate {
     font-size: 1.5rem;
   }
 
+  .navbar{
+    flex-wrap: nowrap;
+  }
   #hero > div > div:last-child {
     padding-top: 9rem;
     padding: 6rem;

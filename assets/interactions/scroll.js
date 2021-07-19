@@ -15,7 +15,7 @@ function scrollToTop() {
   // }
 
   $(document).scroll(function () {
-    if(window.scrollY > 100)
+    if(window.scrollY > 70)
     {
       $('#bounce-arrow').hide();
       $('#scrollToTopBtn').show();

@@ -16,11 +16,13 @@ body {
 
 .navbar {
   height: 12%;
-  width: 100%;
+  /* width: 100%; */
   float: center;
   z-index: 2;
   background-color: #FFF9EE;
-  padding-right: 35%;
+}
+.navbar-list{
+padding-left: 25%;
 }
 .navbar-toggler-icon{
   display: inline-flex;
@@ -72,6 +74,11 @@ a.nav-link.current{
 .hero-row {
   margin-right: 0;
   margin-bottom: 2rem;
+}
+
+#hero{
+  display: inline-block;
+  height: 100%;
 }
 
 #hero > div > div {
@@ -307,7 +314,7 @@ img {
   left: 80%;
 }
 #scrollToTopBtn{
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 /* image model */
