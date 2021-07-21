@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Chillax/chillax.css" />
+    <link rel="stylesheet" href="/assets/fonts/Kathumo/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width">
+    
+    <script type="text/javascript" src="../assets/interactions/simpleTypingCarousel.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    
+    <link rel="stylesheet" href="assets/style-work.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style-sm.css" />
+
+    <title>Jiatong Zhong | Portfolio - About</title>
+  </head>
+
+  <!-- TOP -->
+  <body>
+    <!-- scrollprogress -->
+          <script>
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+              // Scroll setting
+              $(document).scroll(function () {
+                const nav = $(".navbar");
+                nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+              });
+
+              // Active tab setting
+              $(document).ready(function () {
+                let currentLink = window.location.href.split(/\//);
+                currentLink = currentLink[currentLink.length-1];
+                if (!currentLink){
+                  currentPage = "Design"; //Default home page
+                  console.log("Design");
+                }
+                else {
+                  currentLink = currentLink.split('.');
+                  currentPage = currentLink[0].split('_');
+                  currentPage = currentPage[0];
+                  if(currentPage == 'project'){
+                    currentPage = "Design";
+                  }
+                }
+                $("ul.navbar-nav > li.nav-item").each(function() {
+                    $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
+                  });
+              });
+        </script>
+        <div class="progress-container fixed-top">
+          <div class="progress-bar" id="myBar"></div>
+        </div> 
+    <!-- scrollprogress -->
+    <!-- Navigation Bar   -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <img class="logo" src="/assets/favicon/apple-icon-152x152.png"/>
+        </a>
+        <div class="navbar navbar-list">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item large-nav">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item large-nav">
+                  <a class="nav-link" href="/me.html">About</a>
+              </li>
+              <li class="nav-item large-nav">
+                  <a class="nav-link current" href="/work.html">Work</a>
+              </li>
+              </div>
+            </ul>
+        </div>
+
+        <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button> -->
+      </nav>
+
+
+    <!-- Navigation Bar   -->
+<!-- Top -->
+<section id="header" class="banner">
+    <div class=header-padding>
+      <p class="header-text-1">2020 - 2021</p>
+      <p class="header-text-2">Portfolio Gallery</p>
+      <br>
+    </div>
+  </section>
+<!-- Top -->
+
+    <!-- main -->
+      <div style="background-color: #FFF9EE;">
+        <br>
+        <br>
+        <section class="section">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-12">
+                  <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
+                    <label class="btn btn-sm btn-primary active">
+                      <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+                    </label>
+                    <label class="btn btn-sm btn-primary">
+                      <input type="radio" name="shuffle-filter" value="design" />UX/UI
+                    </label>
+                    <label class="btn btn-sm btn-primary">
+                      <input type="radio" name="shuffle-filter" value="programming" />PROGRAMMING
+                    </label>
+                    <label class="btn btn-sm btn-primary">
+                      <input type="radio" name="shuffle-filter" value="3D" />3D
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row shuffle-wrapper">
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/zoom/zoom.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="assets/images/zoom/Workbook.pdf">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;programming&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="https://github.com/penguin-squad/playlist-app-rn">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;programming&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/magic/1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="https://vimeo.com/500506504">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/QQmusic/cover.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="assets/images/QQmusic/work.pdf">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-8.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="assets/images/mocafe/cafe.pdf">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="https://share.mubu.com/doc/6jlUUub704W">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="assets/images/guzheng/guzheng.pdf">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="https://drive.google.com/file/d/1NlNArmkzqkfYogDsXnbdRmbWUPgHEDJP/view">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;3D&quot;]">
+                  <div class="position-relative rounded hover-wrapper">
+                    <img src="assets/images/portfolio/item-7.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    <div class="hover-overlay">
+                      <div class="hover-content">
+                        <a class="btn btn-light btn-sm" href="https://fruitmodelblender.blogspot.com/">view project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="box-sizing: border-box;height: 10rem;">
+            </div>
+          </section>
+          <!-- /portfolio -->
+      </div>
+
+
+
+    <!-- main -->
+
+
+
+ <!-- Modal Image -->
+    
+  <!-- The Modal -->
+  <div id="Model" class="modal">
+    <span id ="close" class="close">&times;</span>
+    <img class="modal-content" id="divImg">
+    <div id="caption"></div>
+  </div>
+
+
+  <script>
+    $('.imageModal').click(function (){
+      // Get the modal
+      let img = $(this);
+      console.log(img);
+      let imgId = img.id;
+      let modal = document.getElementById(`Model`);
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      let modalImg = document.getElementById(`divImg`);
+      let captionText = document.getElementById(`caption`);
+
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+
+      var span = document.getElementById("close");
+      span.onclick = function() { 
+      modal.style.display = "none";}
+    }) 
+    
+  </script>
+  <!-- The Modal -->
+
+
+  <!-- Footer -->
+    <script type="text/javascript" src="../assets/interactions/scroll.js"></script>
+
+    <div class="footer row" style="margin-right: 0">
+        <div class="row col-md-6 col-sm-12 footer-icons">
+            <a href="tel:+460767072625" class="footer-social" target="_blank"
+            ><img src="../assets/images/me/phone.svg" style="width: 100%;filter: invert(100%);" alt=""
+            /></a>
+            <a href="mailto: zjt98612@gmail.com" class="footer-social" target="_blank"
+            ><img src="../assets/images/me/envelope.svg" style="width: 100%;filter: invert(100%);" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/jiatongzhong/" class="footer-social" target="_blank"
+              ><img src="../assets/images/me/linkedin.svg" style="width: 100%;filter: invert(100%);" alt=""
+            /></a>
+            <a href="https://www.instagram.com/kiera98612/" class="footer-social" target="_blank"
+              ><img src="../assets/images/me/instagram.svg" style="width: 100%;filter: invert(100%);" alt=""
+            /></a>
+            <a href="https://github.com/ikirito98612" class="footer-social" target="_blank"
+              ><img src="../assets/images/me/github.svg" style="width: 100%;filter: invert(100%);" alt=""
+            /></a>
+        </div>
+        <div class="col-md-6 col-sm-12 footer-text" style="display: flex;justify-content: flex-end;
+        align-items: center;">Copyright &copy; 2021 Jiatong Zhong.</div>  
+        <div class="scroll-to-top">
+          <button id="scrollToTopBtn"
+          onclick=scrollToTop()>&#8593</button>
+        </div>
+    </div>
+  <!-- Footer -->
+    <!-- filter -->
+    <script src="assets/shuffle/shuffle.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <script type="text/javascript" src="../assets/interactions/animationOnScroll.js"></script>
+  </body>
+</html>
